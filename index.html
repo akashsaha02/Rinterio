@@ -22,6 +22,12 @@
         .font-manrope {
             font-family: "Manrope", sans-serif;
         }
+
+        .bg-paper {
+            background-image: url('/images/bg.jpg'), linear-gradient(180deg, rgba(128, 128, 128, 0.5) 0%, rgba(128, 128, 128, 0.5) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
     </style>
     <script>
         tailwind.config = {
@@ -341,11 +347,13 @@
                     </div>
                 </div>
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-4 p-4 border-2 rounded-3xl flex justify-center items-center">
+                <div
+                    class="col-span-12 md:col-span-6 lg:col-span-4 p-4 border-2 rounded-3xl flex justify-center items-center">
                     <img class="w-full" src="./images/img2.png" alt="">
                 </div>
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 border-2 rounded-3xl flex justify-center items-center">
+                <div
+                    class="col-span-12 md:col-span-6 lg:col-span-3 p-4 border-2 rounded-3xl flex justify-center items-center">
                     <img class="w-full" src="./images/img3.png" alt="">
                 </div>
 
@@ -354,7 +362,8 @@
                         <img class="object-cover w-full md:w-1/2 rounded-t-lg h-full" src="./images/img4.png" alt="">
                         <div class="space-y-3">
                             <h2 class="font-extrabold text-xl text-black-primary">Commercial</h2>
-                            <p class="max-w-xl">TThe barn house captivates with its blend of rustic charm and modern. </p>
+                            <p class="max-w-xl">TThe barn house captivates with its blend of rustic charm and modern.
+                            </p>
                             <div>
                                 <button class="font-bold flex items-center">
                                     <p>Book Consultant</p>
@@ -368,21 +377,80 @@
                     </div>
                 </div>
 
-                <div class="col-span-12 md:col-span-6 lg:col-span-3 p-4 border-2 rounded-3xl flex justify-center items-center">
+                <div
+                    class="col-span-12 md:col-span-6 lg:col-span-3 p-4 border-2 rounded-3xl flex justify-center items-center">
                     <img class="w-full" src="./images/img5.png" alt="">
                 </div>
 
-                <div class="col-span-12 md:col-span-6 lg:hidden p-4 border-2 rounded-3xl flex justify-center items-center">
+                <div
+                    class="col-span-12 md:col-span-6 lg:hidden p-4 border-2 rounded-3xl flex justify-center items-center">
                     <img class="w-full" src="./images/img3.png" alt="">
                 </div>
             </div>
         </section>
 
         <!-- News Section -->
-         
+        <section>
 
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-paper">
+            <div class="container mx-auto py-8 md:py-16 lg:py-24 px-5 lg:px-0">
+                <div class="space-y-6 text-center">
+                    <div class="flex justify-center items-center">
+                        <button
+                            class="rounded-full bg-green-secondary text-black-secondary font-extrabold px-6 border-1 border-green-primary py-2 flex items-center">
+                            <div class="mr-2 flex justify-center items-center">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                            <p>Let’s Connect</p>
+                        </button>
+                    </div>
+                    <h2 class="font-extrabold text-3xl lg:text-4xl max-w-xl mx-auto text-black-primary">
+                        Let’s Discuss Next Project</h2>
+                    <p class="text-black-secondary max-w-xl mx-auto">
+                        The barn house captivates with its blend of rustic charm and
+                        modern sophistication, featuring weathered wood, sleek metal accents.
+                    </p>
+                </div>
+
+                <div class="space-y-3 md:space-y-5 max-w-5xl mx-auto mt-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <input class="w-full rounded-3xl bg-white p-5 placeholder:text-black-secondary placeholder:font-bold"
+                        placeholder="First Name*" type="text">
+                        <input class="w-full rounded-3xl bg-white p-5 placeholder:text-black-secondary placeholder:font-bold"
+                        placeholder="Last Name*" type="text">
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                        <input class="w-full rounded-3xl bg-white p-5 placeholder:text-black-secondary placeholder:font-bold"
+                        placeholder="Phone Number*" type="number">
+                        <input class="w-full rounded-3xl bg-white p-5 placeholder:text-black-secondary placeholder:font-bold"
+                        placeholder="Email*" type="email">
+                    </div>
+                    <div>
+                      
+                        <textarea rows="6"
+                        class="w-full rounded-3xl bg-white p-5 placeholder:text-black-secondary placeholder:font-bold"
+                        placeholder="Write your message here" name="" id=""></textarea>
+
+                    </div>
+
+                    <button class="rounded-3xl w-full bg-green-primary text-xl font-bold px-4 py-3 flex justify-center items-center">
+                        <p>Send Mail</p>
+                        <div class="ml-2 bg-black-primary rounded-full text-white w-8 h-8 flex justify-center items-center">
+                            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </div>
+                    </button>
+
+                </div>
+            </div>
+        </section>
     </main>
-    <footer>
+    <footer class="bg-[#1C1C1C] py-16 lg:py-24">
+        <div class="container mx-auto">
+
+        </div>
 
     </footer>
 
