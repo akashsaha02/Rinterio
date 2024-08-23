@@ -49,66 +49,69 @@
 
 <body class="font-manrope text-black-primary">
     <header class="container mx-auto pb-8 md:pb-16 lg:pb-32">
-        <!-- navbar -->
-        <div class="navbar bg-base-100">
-            <div class="navbar-start">
-                <div class="dropdown block lg:hidden">
-                    <div tabindex="0" role="button" class="btn btn-ghost">
-                        <i class="fa-solid fa-bars"></i>
+        <nav class="bg-white w-full">
+            <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <button class="bg-green-primary rounded-full w-10 h-10 flex justify-center items-center">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </button>
+                    <span class="self-center text-2xl font-semibold whitespace-nowrap ">Rinterio</span>
+                </a>
+                <div class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+                    <div class="space-x-2 flex">
+                        <button class="btn btn-circle hidden md:block">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                        <button class="btn btn-circle hidden md:block">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                        <div class="hidden md:block">
+                            <button class="rounded-full bg-green-primary text-md font-bold px-4 py-2 flex items-center ">
+                                <p>Book Consultant</p>
+                                <div
+                                    class="ml-2 bg-black-primary rounded-full text-white w-8 h-8 flex justify-center items-center">
+                                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                                </div>
+                            </button>
+                        </div>
+                        <button data-collapse-toggle="navbar-sticky" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 btn btn-circle"
+                            aria-controls="navbar-sticky" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
                     </div>
-                    <ul tabindex="0"
-                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow text-right">
-                        <li><a class="text-lg">Home</a></li>
-                        <li><a class="text-lg">Services</a></li>
-                        <li><a class="text-lg">Portfolio</a></li>
-                        <li><a class="text-lg">Blogs</a></li>
-                        <li><a class="text-lg">Contact us</a></li>
-                        <li class="">
-                            <button class="btn btn-circle lg:hidden">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                            </button>
-                            <button class="btn btn-circle lg:hidden">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
+                </div>
+                <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white">
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  ">About</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  ">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0  ">Contact</a>
                         </li>
                     </ul>
-
-                </div>
-                <div class="flex items-center">
-                    <button class="mr-2 bg-green-primary rounded-full w-10 h-10 flex justify-center items-center">
-                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                    </button>
-                    <h3 class="text-2xl md:text-3xl font-bold">
-                        Rinterio</h3>
                 </div>
             </div>
-            <div class="navbar-center hidden lg:block">
-                <ul class="menu menu-horizontal px-1">
-                    <li><a class="text-lg">Home</a></li>
-                    <li><a class="text-lg">Services</a></li>
-                    <li><a class="text-lg">Portfolio</a></li>
-                    <li><a class="text-lg">Blogs</a></li>
-                    <li><a class="text-lg">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="navbar-end md:space-x-2 lg:space-x-5">
-
-                <button class="btn btn-circle hidden lg:block">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                </button>
-                <button class="btn btn-circle hidden lg:block">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </button>
-                <a class="rounded-full bg-green-primary text-xl font-bold px-4 py-2 flex items-center">
-                    <p>Book Consultant</p>
-                    <button class="ml-2 bg-black-primary rounded-full text-white w-8 h-8 flex justify-center items-center">
-                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
-                    </button>
-                </a>
-
-
-            </div>
-        </div>
+        </nav>
 
         <!-- banner section -->
         <div class="flex flex-col items-center text-center mt-10 px-5 md:px-0">
@@ -127,9 +130,6 @@
                     <i class="fa-solid fa-arrow-right -rotate-45"></i>
                 </div>
             </button>
-
-
-
         </div>
     </header>
     <main class="">
@@ -458,7 +458,7 @@
         </section>
     </main>
     <footer class="bg-[#1C1C1C] py-16 lg:py-24 ">
-        <div class="container mx-auto flex flex-col justify-center items-center space-y-3 md:space-y-5">
+        <div class="container mx-auto flex flex-col justify-center items-center space-y-3 md:space-y-5 lg:space-y-7">
             <div class="flex items-center">
                 <button class="mr-2 bg-green-primary font-bold rounded-full w-8 h-8 flex justify-center items-center">
                     <i class="fa-solid fa-arrow-right -rotate-45"></i>
@@ -470,12 +470,21 @@
                 charm and
                 modern sophistication, featuring weathered wood, sleek metal accents.</p>
 
-            <div class="flex flex-col md:flex-row gap-5 md:gap-10 text-[rgb(233,233,233)]">
+            <div class="flex flex-col md:flex-row gap-5 md:gap-16 lg:gap-32 py-3 text-center text-[rgb(233,233,233)]">
                 <p><a class="font-xl" href="">Home</a></p>
-                <p><a class="font-xl" href="">Home</a></p>
-                <p><a class="font-xl" href="">Home</a></p>
-                <p><a class="font-xl" href="">Home</a></p>
-                <p><a class="font-xl" href="">Home</a></p>
+                <p><a class="font-xl" href="">Services</a></p>
+                <p><a class="font-xl" href="">Portfolio</a></p>
+                <p><a class="font-xl" href="">Blog</a></p>
+                <p><a class="font-xl" href="">Contact Us</a></p>
+            </div>
+            <div>
+                <button class="rounded-full bg-green-primary text-md font-bold px-8 py-2 flex items-center ">
+                    <p>Book Consultant</p>
+                    <div
+                        class="ml-2 bg-black-primary rounded-full text-white w-8 h-8 flex justify-center items-center">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                    </div>
+                </button>
             </div>
 
 
