@@ -50,6 +50,7 @@
 <body class="font-manrope text-black-primary">
     <header class="container mx-auto pb-8 md:pb-16 lg:pb-32">
         <nav class="bg-white w-full">
+
             <div class="flex flex-wrap items-center justify-between mx-auto p-4">
                 <a href="./index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
                     <button class="bg-green-primary rounded-full w-10 h-10 flex justify-center items-center">
@@ -77,7 +78,7 @@
                                 </div>
                             </button>
                         </div>
-                        <button data-collapse-toggle="navbar-sticky" type="button"
+                        <!-- <button data-collapse-toggle="navbar-sticky" type="button"
                             class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 btn btn-circle"
                             aria-controls="navbar-sticky" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
@@ -86,7 +87,27 @@
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
                             </svg>
-                        </button>
+                        </button> -->
+
+                        <details class="dropdown ">
+                            <summary
+                                class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 btn btn-circle cursor-pointer">
+                                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                    viewBox="0 0 17 14">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                                </svg>
+                            </summary>
+
+                            <ul
+                                class="menu dropdown-content bg-gray-100 rounded-box z-10 w-40 p-2 ml-[-7.5rem] mt-5 shadow text-xl">
+                                <li><a href="#" class="text-gray-800 font-semibold text-right">Home</a></li>
+                                <li><a href="#" class="text-gray-500">Services</a></li>
+                                <li><a href="#" class="text-gray-500">Portfolio</a></li>
+                                <li><a href="#" class="text-gray-500">Blogs</a></li>
+                                <li><a href="#" class="text-gray-500">Contact Us</a></li>
+                            </ul>
+                        </details>
                     </div>
                 </div>
                 <div class="items-center justify-between hidden w-full lg:flex md:w-auto md:order-1" id="navbar-sticky">
@@ -144,7 +165,8 @@
             <div
                 class="grid grid-cols-1 lg:grid-cols-2 items-center py-8 md:py-16 lg:py-24 container mx-auto gap-10 px-5 md:px-10">
                 <!-- about content -->
-                <div class="space-y-6">
+                <div class="space-y-6 relative">
+                    <img src="./images/Vector.png" class=" hidden lg:block absolute left-[-10%] top-[-2rem]" alt="">
                     <div class="flex justify-center items-center lg:justify-start">
                         <button
                             class="rounded-full bg-white text-black-secondary font-extrabold px-6 border-1 border-green-primary py-2 flex items-center">
@@ -420,7 +442,122 @@
                         modern sophistication, featuring weathered wood, sleek metal accents.
                     </p>
                 </div>
-                <div>
+
+                <!-- News Grid -->
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-5 md:mt-10">
+                    <!-- News Card 1 -->
+                    <div class="relative flex flex-col md:flex-row lg:flex-col rounded-3xl bg-white shadow-md w-full">
+                        <div
+                            class="relative w-full md:w-3/4 lg:w-full rounded-[32px] p-4 m-0 text-black-secondary bg-white">
+                            <img src="./images/article1.png" alt="card-image"
+                                class=" object-cover rounded-xl w-full h-full" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-x-6 mb-2 text-sm text-black-secondary">
+                                <div class="flex items-center gap-x-3">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <p class="text-gray-600  line-clamp-1">August 15, 2024</p>
+                                </div>
+                                <div class="flex items-center gap-x-3">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="text-gray-600 line-clamp-1">By Admin</p>
+                                </div>
+                            </div>
+                            <h4
+                                class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                How to choose the furniture right of your home.
+                            </h4>
+                            <p
+                                class="my-4 block font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+                                The barn house captivates with its blend of rustic charm and modern.
+                            </p>
+                            <div>
+                                <button class="font-bold flex text-xl items-center">
+                                    <p>Read More</p>
+                                    <div
+                                        class="ml-2 bg-green-primary rounded-full w-8 h-8 flex items-center justify-center">
+                                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 2 -->
+                    <div class="relative flex flex-col md:flex-row lg:flex-col rounded-3xl bg-white shadow-md w-full">
+                        <div
+                            class="relative w-full md:w-3/4 lg:w-full rounded-[32px] p-4 m-0 text-black-secondary bg-white">
+                            <img src="./images/article2.png" alt="card-image"
+                                class=" object-cover rounded-xl w-full h-full" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-x-6 mb-2 text-sm text-black-secondary">
+                                <div class="flex items-center gap-x-3">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <p class="text-gray-600  line-clamp-1">August 15, 2024</p>
+                                </div>
+                                <div class="flex items-center gap-x-3">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="text-gray-600 line-clamp-1">By Admin</p>
+                                </div>
+                            </div>
+                            <h4
+                                class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                How to choose the furniture right of your home.
+                            </h4>
+                            <p
+                                class="my-4 block font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+                                The barn house captivates with its blend of rustic charm and modern.
+                            </p>
+                            <div>
+                                <button class="font-bold flex text-xl items-center">
+                                    <p>Read More</p>
+                                    <div
+                                        class="ml-2 bg-green-primary rounded-full w-8 h-8 flex items-center justify-center">
+                                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- News Card 3 -->
+                    <div class="relative flex flex-col md:flex-row lg:flex-col rounded-3xl bg-white shadow-md w-full">
+                        <div
+                            class="relative w-full md:w-3/4 lg:w-full rounded-[32px] p-4 m-0 text-black-secondary bg-white">
+                            <img src="./images/article3.png" alt="card-image"
+                                class=" object-cover rounded-xl w-full h-full" />
+                        </div>
+                        <div class="p-6">
+                            <div class="flex items-center gap-x-6 mb-2 text-sm text-black-secondary">
+                                <div class="flex items-center gap-x-3">
+                                    <i class="fa-solid fa-calendar-days"></i>
+                                    <p class="text-gray-600  line-clamp-1">August 15, 2024</p>
+                                </div>
+                                <div class="flex items-center gap-x-3">
+                                    <i class="fa-solid fa-user"></i>
+                                    <p class="text-gray-600 line-clamp-1">By Admin</p>
+                                </div>
+                            </div>
+                            <h4
+                                class="block font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                                How to choose the furniture right of your home.
+                            </h4>
+                            <p
+                                class="my-4 block font-sans text-base antialiased font-normal leading-relaxed text-gray-700">
+                                The barn house captivates with its blend of rustic charm and modern.
+                            </p>
+                            <div>
+                                <button class="font-bold flex text-xl items-center">
+                                    <p>Read More</p>
+                                    <div
+                                        class="ml-2 bg-green-primary rounded-full w-8 h-8 flex items-center justify-center">
+                                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
